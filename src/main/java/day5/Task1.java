@@ -3,7 +3,7 @@ package day5;
 public class Task1 {
     public static void main(String[] args) {
           Cars car1 = new Cars();
-          car1.setModel("Honda");
+          car1.setModel("Honda CR-V");
           car1.setColor("Черный");
           car1.setYear(2008);
 
