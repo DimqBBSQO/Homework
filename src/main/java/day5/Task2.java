@@ -12,9 +12,9 @@ Motorbike moto1 = new Motorbike("Honda CBR", "Black", 2008);
 
 
         static class Motorbike{
-        String model;
-        String color;
-        int year;
+        private String model;
+        private String color;
+        private int year;
 
 
 

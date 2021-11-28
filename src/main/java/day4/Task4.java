@@ -7,21 +7,24 @@ public class Task4 {
         Random rand = new Random();
 
 
-        int[] arrow = new int[100];
+        int[] arrow = new int[20];
         for (int i = 0; i<arrow.length; i++){
-            arrow[i] = rand.nextInt(10000);
+            arrow[i] = rand.nextInt(10);
             System.out.print(arrow[i] + " ");
         }
 
 
         int max = 0;
         int indexForMax = 0;
-        int score = 0;
+
         for (int i = 0; i < arrow.length-2; i++) {
-            score = arrow[i]+arrow[i+1]+arrow[i+2];
-            if (max <= score) {
+            int score = 0;
+            for (int n = i; n < i + 3; n++) {
+                score = score + arrow[n];
+            }
+            if (score > max) {
                 max = score;
-                indexForMax=i;
+                indexForMax = i;
             }
         }
         System.out.println();
