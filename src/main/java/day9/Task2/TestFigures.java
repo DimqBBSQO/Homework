@@ -15,25 +15,26 @@ public class TestFigures {
 
         Figures[] figures = {circle1, circle2, circle3, triangle1, triangle2, triangle3, rectangle1, rectangle2};
 
+    }
 
-        public static double calculateRedPerimeter(Figures[]figures) {
-            double i = 0;
-            for (Figures x : figures) {
-                if (x.getColor().equals("Red")) {
-                    i = i + x.perimeter();
-                }
-                return i;
+    public static double calculateRedPerimeter(Figures[] figures) {
+        double i = 0;
+        for (Figures x : figures) {
+            if (x.getColor().equals("Red")) {
+                i = i + x.perimeter();
             }
         }
-        public static double calculateRedArea(Figures[]figures) {
-            double i = 0;
-            for (Figures x : figures) {
-                if (x.getColor().equals("Red")) {
-                    i = i + x.area();
-                }
-                return i;
+        return i;
+    }
+
+    public static double calculateRedArea(Figures[] figures) {
+        double i = 0;
+        for (Figures x : figures) {
+            if (x.getColor().equals("Red")) {
+                i = i + x.area();
             }
         }
-
+        return i;
     }
 }
+

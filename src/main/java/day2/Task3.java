@@ -14,7 +14,7 @@ public class Task3 {
         while (i < b){
             if(i%5 == 0 && i%10 !=0){
                 System.out.print(i + " ");
-                ;
+                i++;
             } else {
             } i++;
         }

@@ -5,9 +5,12 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String city = new String();
-        while (!city.equals("Stop")){
-            city = scanner.nextLine();
+
+        while (true){
+            String city = scanner.nextLine();
+            if(city.equals("Stop"))
+                break;
+
             switch (city) {
                 case "Москва":
                 case "Владивосток":
@@ -28,8 +31,6 @@ public class Task1 {
                 case "Мюнхен":
                 case "Кёльн":
                     System.out.println("Германия");
-                    break;
-                case "Stop":
                     break;
                 default:
                     System.out.println("Неизвестная страна");
